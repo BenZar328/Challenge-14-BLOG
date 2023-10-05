@@ -1,0 +1,16 @@
+<h4>Recent posts:</h4>
+
+{{#each posts as |post|}}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{post.post_title}}</span>
+      <p>{{post.post_text}}</p>
+      <br>
+      <p>By: {{post.user.username}}</p>
+      <p>Posted on: {{format_date post.createdAt}}</p>
+    </div>
+    <div class="card-action">
+      <a href="/post/{{post.id}}" class="Blue-text text-darken-4">Go to post page</a>
+    </div>
+  </div>
+{{/each}}

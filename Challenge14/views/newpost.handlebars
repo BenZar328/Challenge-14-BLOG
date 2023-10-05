@@ -1,0 +1,20 @@
+<h4>Fill out the form to add a new post</h4>
+
+<form class="col s12" id="newpost-form" method="POST">
+  <div class="row">
+    <div class="input-field col s12">
+      <textarea id="post_title" name="post_title" class="materialize-textarea"></textarea>
+      <label for="post_title">Enter post title</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <textarea id="post_body" name="post_body" class="materialize-textarea"></textarea>
+      <label for="post_body">Enter post body</label>
+    </div>
+  </div>
+  <button class="btn purple darken-1" id="add-post-btn" type="submit">Publish New Post</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/js/add-post.js"></script>
